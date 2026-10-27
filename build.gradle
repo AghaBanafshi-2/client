@@ -1,3 +1,12 @@
+// build.gradle
+pluginManagement {
+    repositories {
+        maven { url 'https://maven.fabricmc.net/' }
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
 plugins {
     id 'fabric-loom' version '1.7-SNAPSHOT'
     id 'maven-publish'
@@ -8,6 +17,7 @@ group = 'com.purple.client'
 
 repositories {
     mavenCentral()
+    maven { url 'https://maven.fabricmc.net/' }
 }
 
 dependencies {
